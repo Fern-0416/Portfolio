@@ -1,0 +1,77 @@
+body{
+    background-color: rgb(127, 223, 255);
+
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    line-height: 1.6em;
+    margin: 0;
+    margin-bottom: 2000px;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#mainHeader{
+    background-color: green;
+    color:white;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+
+}
+
+
+/* NAV BAR BEGINS */
+
+.topNav{
+    position: absolute;
+    background-image: url(Images/TopNav.png);
+
+    width: 100%;
+    top: 0;
+    margin: auto;
+    height:80px;
+    background-position: center center;
+    background-size: contain;
+}
+.topNav ul{
+    padding:0;
+    list-style: none;
+    text-align: center;
+    
+
+}
+.topNav li{
+    margin-left: 6%;
+    margin-right: 6%;
+
+    display: inline;
+}
+.topNav a{
+    
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0;
+}
+.topNav a:hover{
+    color: green;
+}
+.topNav a:active{
+    color: #614028;
+}
+
+.current{
+    background-color: #614028;
+    padding-top: 5%;
+    padding-bottom: 40px;
+    padding: 40px 5px;
+
+    border: medium solid black;
+    border-radius: 15px;
+}
+/* NavBar End */
