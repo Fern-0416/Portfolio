@@ -1,294 +1,287 @@
-/* General Start */
 body{
-    background-color: #bec49a;
-
-    font-size: 16px;
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
+    font-size: large;
     line-height: 1.6em;
-    margin:0;
-    margin-top: 50px;
-    margin-bottom: 3000px;
-}
+    font-family:'Times New Roman', Times, serif;
+    color: black;
 
-.container{
-    width: 90%;
-    align-items: center;
-    margin: auto;
-    overflow: hidden;
-}
-
-/* General End */
-
-/* Headers Start */
-#mainHeader{
-    background-image: url(Images/Header.png);
-    color:white;
-    text-align: left;
-
-    padding: 20px 0;
-    margin-bottom: 10px;
-    width: 100%;
-    height: auto;
-
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-
-}
-#mainHeader div{
-    padding-left: 5%;
-    font-size: 60px;
-    line-height: 2em;
-    text-decoration: none;
-}
-
-
-/* Headers End */
-
-/* NAV BAR BEGINS */
-
-.topNav{
-    position: absolute;
-    background-image: url(Images/TopNav.png);
-
-    width: 100%;
-    top: 0;
-    margin: auto;
-    padding-right: auto;
-    height:80px;
-    background-position: center center;
-    background-size: contain;
-}
-.topNav ul{
-    padding:0;
-    list-style: none;
-    text-align: center;
-    
-
-}
-.topNav li{
-    margin-left: 6%;
-    margin-right: 6%;
-
-    display: inline;
-}
-.topNav a{
-    
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
     padding: 0;
-}
-.topNav a:hover{
-    color: green;
-}
-.topNav a:active{
-    color: #614028;
-}
-
-.current{
-    background-color: #614028;
-    padding-top: 5%;
-    padding-bottom: 40px;
-    padding: 40px 5px;
-
-    border: medium solid black;
-    border-radius: 15px;
-}
-/* NavBar End */
-
-
-/* MIT Stuff Start*/
-
-#MITInfo{
-    line-height: 2em;
-    border: #614028 solid 7.5px;
-    background-color: #202e15;
-    border-radius: 20px;
-    color: white;
-    margin: 10px;
-    margin-right: 20%;
-    padding: 10px;
-}
-#MITInfo img{
-    width: 300px;
-    height: auto;
-    margin-left: 40px;
-    float: left;
-
-}
-#MITInfo ul{
-    margin-left: 375px;
-    list-style:disc;
-}
-#MITInfo h1{
-    padding-top: 2.5%;
-    font-size:xx-large;
-}
-#MITInfo h2{
-    font-size: x-large;
-}
-#MITInfo a{
-    color: white;
-    text-decoration: none;
-}
-#MITInfo a:hover{
-    color: green;
-}
-#MITInfo a:active{
-    color: #614028;
-}
-
-/* Mit Stuff End */
-
-/* About Me */
-#AboutMe {
-    color: white;
-    width: 100%;
-    height: auto;
-
     margin: 0;
 
-    padding: 15px 0;
+    background-color: #bec49a;
 
-    float: left;
-    box-sizing: border-box;
-
-    display: block;
-    position:absolute;
 }
-#AboutMe h1{
+
+#navBar{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    
+    z-index: 5;
+
+    background-size: 20% 100%;
+    background-image: url(Images/TopNav.png);
+
     text-align: center;
-    font-size: xx-large;
-    background-color: black;
-}
-#AboutMe p{
-    font-size: large;
-}
-/* About Me End */
+    font-size: 1.5rem;
 
-/* VR start */
+}
+#navBar li{
+    margin: 0 7.5%;
+    display: inline;
+}
+.current{
+    background-color: #614028;
+    padding: 15% 10px 60px 10px;
+    border: solid black 3px;
+    border-radius: 20px;
+}
 
-#VR {
-    float: right;
-    width: 30%;
-    height: auto;
-    box-sizing: border-box;
-    padding: 10px;
-    padding-top: 0;
-    border: solid 5px #614028;
-    background-color: #809c52;
-    border-radius: 15px;
-    position: relative;
-    margin: 20px;
 
-    display: block;
-}
-#combine {
-    display:inline;
-}
-#VR h1{
-    text-align: center;
-    font-size: xx-large;
-}
-#VR h2{
-    text-align: center;
-    font-size: x-large;
-}
-#VR a{
-    color: black;
-}
-.ranSec a{
+.link a{
+    color: white;
     text-decoration: none;
 }
-.ranSec a:hover{
+.link a:hover{
     color: green;
 }
-.ranSec a:active{
-    color: #614028;
+.link a:active{
+    color: black;
 }
-#VR img{
-    width: 90%;
-    border: 5px solid #614028;
-    margin: 10px auto ;
+
+#mainHeader{
+    background-image: url(Images/Header.png);
+    background-size: 100% 100%;
+    width: 100%;
+    position: absolute;
+    padding: 150px 0 150px 0;
+    z-index: 3;
+    
+}
+#mainHeader div{
+    color: white;
+    font-size: 4.5rem;
+    padding: 0 0 0 10%;
+    line-height: 1em;
+}
+
+.general {
+    position: relative;
+    width: 100%;
+    display: inline;
+}
+
+#MIT{
+    border: solid #614028 5px;
     border-radius: 15px;
-    display:block;
-    
-
-}
-
-#CSI {
-    
-    width: 35%;
-    box-sizing: border-box;
-    padding: 20px;
-    padding-bottom: 30px;
-    border: solid 5px #614028;
     background-color: #202e15;
     color: white;
+    position: relative;
+    
+    float:left;
+    width: 90%;
+    margin: 400px 5% auto 5%;
+    z-index: 3;
+}
+#MIT h1{
+    font-size: xx-large;
+    margin: 2% 0 0 0;
+}
+#MIT ul{
+    margin-left: 25%;
+    font-size: x-large;
+}
+#MIT img{
+    margin: 20px 10px 10px 10px;
+    width: 200px;
+    float: left;
+}
+
+#aboutMe {
+    margin: 10px 0 10px 40px;
+    float: left;
+    width: 60%;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+
+#aboutMeTitle {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(173, 216, 230, 0.6);
+    padding: 650px 20px 0 20%;
+    font-size: 2.5rem;
+    margin: 0;
+    border-bottom: #614028 solid 10px;
+    border-radius: 20px;
+}
+#aboutMeTitle div{
+    color: white;
+    border: #614028 5px solid;
+    background-color: #809c52;
+    padding: 15px;
+    width: fit-content;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin: 0;
+
+}
+
+
+#VR{
+    position: relative;
+    border: solid #614028 5px;
     border-radius: 15px;
-    margin: 25px;
+    background-color: #809c52;
+    color: white;
+    
+    float:right;
+    width: 30%;
+    box-sizing: border-box;
+    margin: -50px 20px 10px 10px;
+    padding: 0;
+    z-index: 2;
+}
+#VR h1{
+    font-size: x-large;
+    margin: 0 0 0 0;
+    text-align: center;
+}
+#VR h2{
+    font-size: large;
+    text-align: center;
+
+}
+#VR img{
+    width: 60%;
+    border: black solid 5px;
+    border-radius: 10px;
+
+    margin: 15px 18%;
+
+
+}
+
+
+#CSI {
+    display:inline;
+    border: #614028 solid 5px;
+    background-color: #202e15;
+    border-radius: 15px;
+    position: relative;
+    box-sizing: border-box;
+    margin: 60px 20px 20px 0;
+    color: white;
 
     float: right;
-    box-sizing: border-box;
+    width: 40%;
+    padding: 0;
+
 
 }
-#CSI a{
-    color: white;
-}
 #CSI img{
-    width: 100px;
-    padding: auto;
+    display: inline;
     float: left;
-    border: 5px solid #614028;
-    border-radius: 15px;
+    width: 20%;
+    margin: 20px;
+    border: solid #614028 5px;
+    border-radius: 10px;
 }
 #CSI h1{
+    margin-top: 50px;
     font-size: x-large;
-    text-align: right;
+    margin-top: 7.5%;
+
 }
 #CSI h2{
     font-size: large;
-    text-align: right;
 }
-/* CSI End */
 
-/* APR Start */
 #APR {
-    width: 60%;
-    box-sizing: border-box;
-    background-color: #809c52;
-    border: #614028 solid 10px;
+    border: #614028 solid 5px;
     border-radius: 20px;
+    background-color: #809c52;
+    margin: 20px;
+
+    display: inline;
     float: left;
-    
-}
-#APR h1{
-    padding: 15px 0;
+    position: relative;
+
+    width: 50%;
+    padding: 0;
+    color: white;
+    margin: 20px 0 20px 20px;
+    box-sizing: border-box;
+
+
+
 }
 #APR img{
+    float: right;
+    width: 25%;
+    margin: 10px 0 10px 10px;
+}
+#APR h1{
+    font-size: x-large;
+    text-align: right;
+    margin-top: 7.5%;
+
+}
+#APR h2{
+    font-size: large;
+    text-align: right;
+
+}
+
+.footer {
+    position:relative;
+    /* top: 1000px; */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* bottom: -400pt; */
+    height: min-content;
+    
+    background-color: #202e15;
+    display: block;
+}
+
+.footer {
     float: left;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+
+    border-top: solid #614028 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
-#APR a{
-    color: black;
+.footer h1{
+    font: x-large;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
 }
-/* APR End */
 
 @media(max-width:600px){
-    #AboutMe{
+    #aboutMe{
         width: 100%;
         float: none;
     }
     #VR{
         width: 100%;
-        float:none
+        float:none;
+
+
     }
-    #CSI{
+    #MIT{
         width: 100%;
         float:none      
     }
     #APR{
         width: 100%;
-        float:none
+        float:none;
+        position: absolute;
+
     }
 }
