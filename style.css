@@ -26,8 +26,12 @@ body{
 
 }
 #navBar li{
-    margin: 0 7.5%;
+    margin: 0 6%;
     display: inline;
+}
+#navBar ul{
+    padding: 0;
+
 }
 .current{
     background-color: #614028;
@@ -194,6 +198,7 @@ body{
 }
 #CSI h2{
     font-size: large;
+    padding: 10px;
 }
 
 #APR {
@@ -208,7 +213,7 @@ body{
 
     width: 50%;
     padding: 0;
-    color: red;
+    color: white;
     margin: 20px 0 20px 20px;
     box-sizing: border-box;
 
@@ -217,8 +222,8 @@ body{
 }
 #APR img{
     float: right;
-    width: 25%;
-    margin: 10px 0 10px 10px;
+    width: 30%;
+    margin: 20px 0 10px 10px;
 }
 #APR h1{
     font-size: x-large;
@@ -229,6 +234,7 @@ body{
 #APR h2{
     font-size: large;
     text-align: right;
+    padding: 10px;
 
 }
 
@@ -265,20 +271,37 @@ body{
 
 @media(max-width:600px){
     #navBar {
-        font-size: 1.25rem;
+        font-size: 1rem;
 
     }
     #navBar li{
-        margin: 0 5%;
+        margin: 0 3%;
+        
+    }
+
+    #MIT h1{
+        padding: 15px;
     }
     #aboutMeTitle {
-        padding-top: 700px;
+        padding-top: 915px;
+
     }
     #aboutMe {
         width: 90%;
-        color: red;
+    }
+
+    #VR {
+        width: 80%;
+        margin-top: 5px;
+    }
+    #VR img {
+        margin: 5px 18%;
+    }
+    #APR {
+        width: 80%;
     }
     #CSI {
+        margin-top: 0;
         width: 70%;
     }
 }
