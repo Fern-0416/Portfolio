@@ -264,24 +264,20 @@ body{
 }
 
 @media(max-width:600px){
-    #aboutMe{
-        width: 100%;
-        float: none;
-    }
-    #VR{
-        width: 100%;
-        float:none;
-
+    #navBar {
+        font-size: 1.25rem;
 
     }
-    #MIT{
-        width: 100%;
-        float:none      
+    #navBar li{
+        margin: 0 5%;
     }
-    #APR{
-        width: 100%;
-        float:none;
-        position: absolute;
-
+    #aboutMeTitle {
+        padding-top: 700px;
+    }
+    #aboutMe {
+        width: 90%;
+    }
+    #CSI {
+        width: 70%;
     }
 }
