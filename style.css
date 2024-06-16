@@ -208,7 +208,7 @@ body{
 
     width: 50%;
     padding: 0;
-    color: white;
+    color: red;
     margin: 20px 0 20px 20px;
     box-sizing: border-box;
 
@@ -276,6 +276,7 @@ body{
     }
     #aboutMe {
         width: 90%;
+        color: red;
     }
     #CSI {
         width: 70%;
