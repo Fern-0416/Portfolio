@@ -14,8 +14,10 @@ setInterval(() => {
 
 const banner = document.querySelector('.current')
 let bannerL = 0;
+let bannerA = 3;
 const bannerInt = setInterval(() =>{
     banner.style.paddingBottom = `${bannerL}px`;
-    bannerL += 1;
-    if(bannerL == 60) clearInterval(bannerInt);
-}, 5);
+    bannerL += bannerA;
+    if(bannerA > 1) bannerA -= 0.1;
+    if(bannerL >= 60) clearInterval(bannerInt);
+}, 4);
