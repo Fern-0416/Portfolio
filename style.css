@@ -1,5 +1,5 @@
 body{
-    font-size: large;
+    font-size: 1em;
     line-height: 1.6em;
     font-family:'Times New Roman', Times, serif;
     color: black;
@@ -22,11 +22,11 @@ body{
     background-image: url(Images/TopNav.png);
 
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.1em;
 
 }
 #navBar li{
-    margin: 0 6%;
+    margin: 0 7vw;
     display: inline;
 }
 #navBar ul{
@@ -54,17 +54,18 @@ body{
 
 #mainHeader{
     background-image: url(Images/Header.png);
-    background-size: 100% 100%;
+    background-size: 100% 90%;
+    background-repeat: no-repeat;
     width: 100%;
-    position: absolute;
+    position: relative;
     padding: 150px 0 150px 0;
     z-index: 3;
     
 }
 #mainHeader div{
     color: white;
-    font-size: 4.5rem;
-    padding: 0 0 0 10%;
+    font-size: 4em;
+    padding: 0 2% 0 10%;
     line-height: 1em;
 }
 
@@ -75,6 +76,8 @@ body{
 }
 
 #MIT{
+
+
     border: solid #614028 5px;
     border-radius: 15px;
     background-color: #202e15;
@@ -83,55 +86,70 @@ body{
     
     float:left;
     width: 90%;
-    margin: 400px 5% auto 5%;
+    margin: 0 5% 10px 5%;
     z-index: 3;
 }
-#MIT h1{
-    font-size: xx-large;
+#MIT div{
+    font-size: 2em;
     margin: 2% 0 0 0;
+    padding: 0 10px;
+    line-height: 1.2em;
+    letter-spacing: 1px;
+    
 }
 #MIT ul{
-    margin-left: 25%;
-    font-size: x-large;
+    margin: 15px;
+    width: 60%;
+    float: right;
+    font-size: 1.3em;
 }
 #MIT img{
-    margin: 20px 10px 10px 10px;
-    width: 200px;
+    margin: 0;
+    height: 10em;
     float: left;
 }
 
 #aboutMe {
-    margin: 10px 0 10px 40px;
+    margin: 0px 0 10px 40px;
     float: left;
     width: 60%;
     box-sizing: border-box;
-    font-size: 1.2rem;
+    font-size: 1.2em;
+
 }
 
 #aboutMeTitle {
+
     position: relative;
     z-index: 1;
     background-color: rgba(173, 216, 230, 0.6);
-    padding: 650px 20px 0 20%;
-    font-size: 2.5rem;
-    margin: 0;
+    /* padding: 0 0 0 0; */
+    top: -200px;
+    padding: 400px 0 0 25%;
+
     border-bottom: #614028 solid 10px;
     border-radius: 20px;
+    margin-bottom: -200px;    
 }
 #aboutMeTitle div{
+    
     color: white;
+    font-size: 1.4em;
+
     border: #614028 5px solid;
     background-color: #809c52;
+
     padding: 15px;
     width: fit-content;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    margin: 0;
+
 
 }
 
 
 #VR{
+    max-width: 400px;
     position: relative;
     border: solid #614028 5px;
     border-radius: 15px;
@@ -141,17 +159,17 @@ body{
     float:right;
     width: 30%;
     box-sizing: border-box;
-    margin: -50px 20px 10px 10px;
+    margin: -75px 3% 10px auto;
     padding: 0;
     z-index: 2;
 }
 #VR h1{
-    font-size: x-large;
+    font-size: 1.6em;
     margin: 0 0 0 0;
     text-align: center;
 }
 #VR h2{
-    font-size: large;
+    font-size: 1em;
     text-align: center;
 
 }
@@ -183,25 +201,25 @@ body{
 
 }
 #CSI img{
-    display: inline;
     float: left;
-    width: 20%;
+    width: 100px;
     margin: 20px;
     border: solid #614028 5px;
     border-radius: 10px;
 }
 #CSI h1{
-    margin-top: 50px;
-    font-size: x-large;
-    margin-top: 7.5%;
+    font-size: 1.6em;
+    margin-top: 30px;
 
 }
 #CSI h2{
-    font-size: large;
+    font-size: 1em;
     padding: 10px;
 }
 
 #APR {
+
+
     border: #614028 solid 5px;
     border-radius: 20px;
     background-color: #809c52;
@@ -214,7 +232,7 @@ body{
     width: 50%;
     padding: 0;
     color: white;
-    margin: 20px 0 20px 20px;
+    margin: 40px 0 20px 20px;
     box-sizing: border-box;
 
 
@@ -222,17 +240,16 @@ body{
 }
 #APR img{
     float: right;
-    width: 30%;
+    width: 150px;
     margin: 20px 0 10px 10px;
 }
 #APR h1{
-    font-size: x-large;
+    font-size: 1.6em;
     text-align: right;
-    margin-top: 7.5%;
-
+    margin: 35px 0 0 0;
 }
 #APR h2{
-    font-size: large;
+    font-size: 1em;
     text-align: right;
     padding: 10px;
 
@@ -269,39 +286,102 @@ body{
     text-align: center;
 }
 
-@media(max-width:600px){
-    #navBar {
-        font-size: 1rem;
-
-    }
-    #navBar li{
-        margin: 0 3%;
-        
-    }
-
-    #MIT h1{
-        padding: 15px;
-    }
+@media(max-width: 875px) {
     #aboutMeTitle {
-        padding-top: 915px;
+        padding-top: 500px;
 
+    }
+}
+@media(max-width: 500px) {
+    #aboutMeTitle {
+        padding-top: 650px;
+    }
+}
+@media (min-width: 1400px){
+    #MIT {
+        width: 80%;
+        margin: 0 10% 10px 10%;
+    }
+    #APR {
+        width: 700px;
+        margin: 40px 0 10px 5%;
+    }
+}
+@media(max-width: 600px) {
+    #navBar li{
+        font-size: 0.8em;
+        margin: 0 5vw;
+    }
+
+    #mainHeader {
+        padding: 125px 0;
+    }
+    #mainHeader div {
+        font-size: 3em;
+    }
+
+    #MIT div{
+        font-size: 1.6em;
+        padding: 10px 20px;
+    }
+    #MIT img {
+        padding: 0 20%;
+        margin: 0;
+    }
+    #MIT ul {
+        font-size: 1.2em;
+        padding: 0;
+        margin: 0 10px 10px 0;
+        width: 70%;
+    }
+
+    #aboutMeTitle {
+        padding-top: 560px;
     }
     #aboutMe {
         width: 90%;
+        margin: 0 5%;
+        font-size: 1em;
+
     }
 
+
     #VR {
+        float: none;
         width: 80%;
-        margin-top: 5px;
+        margin: 350px auto 10px 10%;
+        padding: 10px;
     }
-    #VR img {
-        margin: 5px 18%;
-    }
-    #APR {
-        width: 80%;
-    }
+    
     #CSI {
-        margin-top: 0;
-        width: 70%;
+        float: none;
+        width: 80%;
+        margin: 30px 10%;
+        display: block;
+    }
+    #CSI img {
+        margin: 10px;
+        width: 80px;
+    }
+    #CSI h1{
+        margin: 10px;
+        font-size: 1.5em;
+    }
+    #CSI h2{
+        margin: 10px;
+    }
+
+    #APR {
+        display: block;
+        float: none;
+        width: 80%;
+        margin: 40px 10% 20px;
+    }
+    #APR img{
+        width: 125px;
+        margin: 10px 0 0;
+    }
+    #APR h1{
+        margin: 30px 5px 20px;
     }
 }
