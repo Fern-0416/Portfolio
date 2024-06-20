@@ -271,19 +271,30 @@ body{
 .footer {
     float: left;
     margin: 0;
-    padding: 0;
+    padding: 10px 0;
     margin-top: 20px;
 
     border-top: solid #614028 5px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+    text-align: center;
+
+    color: white;
+
+
+
 }
 .footer h1{
-    font: x-large;
-    color: white;
+    font-size: 1.2em;
+    display: inline;
     margin: 0;
-    padding: 10px;
-    text-align: center;
+    padding: 10px 10% 0 0;
+}
+.footer h2{
+    display: inline;
+    font-size: 1.2em;
+    padding: 10px 0 0 10%;
+
 }
 
 @media(max-width: 875px) {
@@ -383,5 +394,15 @@ body{
     }
     #APR h1{
         margin: 30px 5px 20px;
+    }
+
+    .footer h1 {
+        font-size: 0.8em;
+        padding: 10px 5% 0 0;
+    }
+    .footer h2{
+        font-size: 0.8em;
+        padding: 10px 0 0 5%;
+
     }
 }

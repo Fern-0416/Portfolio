@@ -25,7 +25,7 @@ const bannerInt = setInterval(() =>{
 }, 4);
 
 
-// Moving
+// MOVE
 
 const move = document.querySelectorAll('.move');
 
@@ -73,5 +73,52 @@ if(typeof move[1] != 'undefined'){
     })
 }
 
+
+//HOVER
+
 const hover = document.querySelectorAll(".hover");
 
+const hoverP = [0,0];
+const hoverV = [0,0];
+const hoverA = [-1,-1];
+const hovering = [false, false];
+
+setInterval(()=> {
+    for(i = 0; i < 2; i++) {
+        hoverP[i] += hoverV[i];
+
+        // if(hovering[i]) hoverV[i] += hoverA[i]; //1
+
+         hoverV[i] += hoverA[i]; //2
+         if(!hovering[i]) hoverA[i] = -0.2*hoverV[i]; //2
+
+        hover[i].style.top = `${hoverP[i]}px`;
+        
+        if(hoverP[i] > 40 || hoverV[i] > 3) hoverA[i] = -0.3;
+        if(hoverP[i] < 0 || hoverV[i] < -3) hoverA[i] = 0.3;
+    }
+}, 30);
+
+if(typeof hover[0] != 'undefined') {
+    hover[0].addEventListener('mouseenter', () => {
+        hovering[0] = true;
+        hoverA[0] = -0.3; //2
+    });
+
+    hover[0].addEventListener('mouseleave', () => {
+        hovering[0] = false;
+        // hoverV[0] = 0; //1
+    })
+}
+
+if(typeof hover[1] != 'undefined') {
+    hover[1].addEventListener('mouseenter', () => {
+        hovering[1] = true;
+        hoverA[1] = -0.3;
+    });
+
+    hover[1].addEventListener('mouseleave', () => {
+        hovering[1] = false;
+        // hoverV[1] = 0;
+    })
+}
