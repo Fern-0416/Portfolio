@@ -1,8 +1,8 @@
 // Navigation Bar 
 const nav = document.querySelector('#navBar');
 
-let navOffset = 500;
-let navSwitch = true;
+let navOffset = Math.random()*500;
+let navSwitch = Math.random() > 0.5;
 setInterval(() => {
     nav.style.backgroundPosition = `${navOffset}px`;
     if(navSwitch) navOffset += 1;
@@ -41,13 +41,14 @@ setInterval(() => {
 
         move[i].style.top = `${moveTop[i]}px`;
         move[i].style.left = `${moveLeft[i]}px`;
-        if(moveTop[i] > 40 && moveTopV[i] > 0) moveTopV[i] = -1* moveTopV[i];
-        if(moveTop[i] < -50 && moveTopV[i] < 0) moveTopV[i] = -1* moveTopV[i];
+        if(moveTop[i] > 30 && moveTopV[i] > 0) moveTopV[i] = -1* moveTopV[i];
+        if(moveTop[i] < -40 && moveTopV[i] < 0) moveTopV[i] = -1* moveTopV[i];
         if(moveLeft[i] > 20 && moveLeftV[i] > 0) moveLeftV[i] = -1* moveLeftV[i];
         if(moveLeft[i] < -20 && moveLeftV[i] < 0) moveLeftV[i] = -1* moveLeftV[i];    
     }
 
 }, 30);
+
 
 if(typeof move[0] != 'undefined'){
     move[0].addEventListener('mouseover', () => {
@@ -92,7 +93,7 @@ setInterval(()=> {
          hoverV[i] += hoverA[i]; //2
          if(!hovering[i]) hoverA[i] = -0.2*hoverV[i]; //2
 
-        hover[i].style.top = `${hoverP[i]}px`;
+         if(typeof hover[i] != 'undefined') hover[i].style.top = `${hoverP[i]}px`;
         
         if(hoverP[i] > 40 || hoverV[i] > 3) hoverA[i] = -0.3;
         if(hoverP[i] < 0 || hoverV[i] < -3) hoverA[i] = 0.3;
@@ -122,3 +123,43 @@ if(typeof hover[1] != 'undefined') {
         // hoverV[1] = 0;
     })
 }
+
+// DROPDOWN
+
+const dropI = document.querySelector(".drop img");
+const dropP = document.querySelector(".drop div")
+let dropped = false;
+let heightD = 0;
+
+if(dropI != null) {
+
+    dropI.addEventListener('mousedown', () => {
+        dropped = !dropped;
+    });
+}
+
+setInterval(() => {
+    if(dropP != null) {
+        if(dropped) {
+            dropP.style.display = "inherit";
+            dropI.style.transform = "scaleY(-1)";
+
+            if(heightD < 11) {
+                heightD+= 1;
+                document.querySelector(".drop ul").style.height = `${heightD}em`;
+            }    
+            else document.querySelector(".drop ul").style.height = "auto";
+        }
+
+        else {
+            if(heightD <= 0) dropP.style.display = "none";
+            else {
+                heightD -= 1;
+                document.querySelector(".drop ul").style.height = `${heightD}em`;
+            }
+            dropI.style.transform = "scaleY(1)";
+        }
+    }
+}, 20);
+
+
