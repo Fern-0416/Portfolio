@@ -163,3 +163,45 @@ setInterval(() => {
 }, 20);
 
 
+// PROJECTS REVEAL
+
+const projectsD = document.querySelectorAll(".projectsD");
+const hide = new Array(projectsD.length);
+
+let opacityBody = 0;
+let opacityBodyB = false;
+let opacityBox = new Array(projectsD.length);
+
+for(let i = 0; i < hide.length; i++) {
+    hide[i] = false;
+    opacityBox[i] = 0;
+    projectsD[i].addEventListener('click', () => {
+        for(let j = 0; j < hide.length; j++) { if(j != i) hide[j] = false;}
+        hide[i] = !hide[i];
+    });
+    document.querySelectorAll(".imgX")[i].addEventListener('click', ()=> {
+        hide[i] = false;
+    })
+}
+
+setInterval(() => {
+    for(let i = 0; i < hide.length; i++) {
+        if(hide[i]) {
+            document.querySelectorAll(".hidden")[i].style.display = "block";
+            if(opacityBox[i] < 1) opacityBox[i] += 0.1;
+            opacityBodyB = true;
+        }
+        else {
+            if(opacityBox[i] > 0) opacityBox[i] -= 0.1;
+            else document.querySelectorAll(".hidden")[i].style.display = "none";
+        }
+        document.querySelectorAll(".hidden")[i].style.opacity = `${opacityBox[i]}`;
+    }   
+
+    document.querySelector("#cover").style.opacity = `${opacityBody}`;
+    if(opacityBodyB) {
+        if(opacityBody < 0.4) opacityBody += 0.05;
+    }
+    else if(opacityBody > 0) opacityBody -= 0.1
+    opacityBodyB = false;
+}, 30);
