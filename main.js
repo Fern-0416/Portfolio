@@ -52,8 +52,10 @@ setInterval(() => {
 
 if(typeof move[0] != 'undefined'){
     move[0].addEventListener('mouseover', () => {
-        moveTopV[0] = 0.8;
-        moveLeftV[0] = 0.75;
+        if(Math.random() > 0.5) moveTopV[0] = 0.8;
+        else moveTopV[0] = -0.8;
+        if(Math.random() > 0.5) moveLeftV[0] = 0.75;
+        else moveLeftV[0] = -0.75;        
     });
 
     move[0].addEventListener('mouseout', () => {
