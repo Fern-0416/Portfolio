@@ -131,11 +131,13 @@ if(typeof hover[1] != 'undefined') {
 const dropI = document.querySelector(".drop img");
 const dropP = document.querySelector(".drop div")
 let dropped = false;
-let heightD = 0;
+let heightD = 4;
+let heightA = 2.5;
 
 if(dropI != null) {
 
     dropI.addEventListener('mousedown', () => {
+        heightA = 2;
         dropped = !dropped;
     });
 }
@@ -146,18 +148,19 @@ setInterval(() => {
             dropP.style.display = "inherit";
             dropI.style.transform = "scaleY(-1)";
 
-            if(heightD < 11) {
-                heightD+= 1;
-                document.querySelector(".drop ul").style.height = `${heightD}em`;
+            if(heightD < 37) {
+                heightD += heightA;
+                if(heightA > 0.3) heightA -= 0.08;
+                document.querySelector("#projectsS").style.maxHeight = `${heightD}em`;
             }    
-            else document.querySelector(".drop ul").style.height = "auto";
+            else document.querySelector("#projectsS").style.maxHeight = "auto";
         }
-
         else {
-            if(heightD <= 0) dropP.style.display = "none";
+            if(heightD <= 5) dropP.style.display = "none";
             else {
-                heightD -= 1;
-                document.querySelector(".drop ul").style.height = `${heightD}em`;
+                heightD -= heightA;
+                if(heightA > 0.5) heightA -= 0.085;
+                document.querySelector("#projectsS").style.maxHeight = `${heightD}em`;
             }
             dropI.style.transform = "scaleY(1)";
         }
@@ -181,7 +184,7 @@ for(let i = 0; i < hide.length; i++) {
         for(let j = 0; j < hide.length; j++) { if(j != i) hide[j] = false;}
         hide[i] = !hide[i];
     });
-    document.querySelectorAll(".imgX")[i].addEventListener('click', ()=> {
+    document.querySelectorAll("#imgX")[i].addEventListener('click', ()=> {
         hide[i] = false;
     })
 }
@@ -200,7 +203,7 @@ setInterval(() => {
         document.querySelectorAll(".hidden")[i].style.opacity = `${opacityBox[i]}`;
     }   
 
-    document.querySelector("#cover").style.opacity = `${opacityBody}`;
+    if(document.querySelector("#cover") != null) document.querySelector("#cover").style.opacity = `${opacityBody}`;
     if(opacityBodyB) {
         if(opacityBody < 0.4) opacityBody += 0.05;
     }
