@@ -210,3 +210,43 @@ setInterval(() => {
     else if(opacityBody > 0) opacityBody -= 0.1
     opacityBodyB = false;
 }, 30);
+
+
+// Bounce
+
+const bouncing = document.querySelector(".bounce");
+let bounceT = 0;
+let bounceC = 0;
+let bounceY = 0;
+// let bounceA = 1.5;
+let bounceU = true;
+
+setInterval(() => {
+    bounceT++;
+    if(bounceC < 2) {
+        if(bounceU) {
+            bounceY-= 1;
+            // bounceY-= bounceA;
+            // if(bounceA > 0.2) bounceA -= 0.13;
+            if(bounceY <= -8) {
+                bounceU = false;
+                // bounceA = 1.5;
+            }
+        }
+        else {
+            bounceY+= 1;
+            // bounceY+= bounceA;
+            // if(bounceA > 0.3) bounceA-= 0.13;
+            if(bounceY >= 0) {
+                bounceU = true;
+                bounceC++;
+                // bounceA = 1.5;
+            }
+        }
+        bouncing.style.top = `${bounceY}px`
+    }
+    if(bounceT >= 125) {
+        bounceT = 0;
+        bounceC = 0;
+    }
+}, 20)

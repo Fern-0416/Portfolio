@@ -1,3 +1,5 @@
+
+
 html {
     overscroll-behavior-y: none;
 }
@@ -9,9 +11,10 @@ body{
     color: black;
 
     padding: 0;
-    margin: 0 0 80px 0;
+    margin: 0 0 0px 0;
 
-    background-color: #bec49a;
+    background-image: linear-gradient(to right, beige, rgb(217, 244, 193));
+    background-size: cover;
 }
 
 /* NAVBAR */
@@ -23,12 +26,12 @@ body{
     z-index: 5;
 
     background-size: 20% 100%;
-    background-image: url(Images/TopNav.png);
+    background-image: url(Images/TopNav-01.png);
 
     text-align: center;
     font-size: 1.1em;
     li{
-        margin: 0 7vw;
+        margin: 0 12vw;
         display: inline;
     }
     ul { padding: 0; }
@@ -44,7 +47,7 @@ body{
 
 /* LINKS */
 .link a{
-    color: white;
+    color: beige;
     text-decoration: none;
 }
 .link a:hover{
@@ -56,7 +59,7 @@ body{
 
 /* HEADER */
 #mainHeader{
-    background-image: url(Images/Header.png);
+    background-image: url(Images/Header-01.png);
     background-size: 100% 90%;
     background-repeat: no-repeat;
 
@@ -66,7 +69,7 @@ body{
     z-index: 3;
     
     div{
-        color: white;
+        color: beige;
         font-size: 4em;
         padding: 0 2% 0 10%;
         line-height: 1em;
@@ -87,8 +90,8 @@ body{
 
     border: solid #614028 5px;
     border-radius: 15px;
-    background-color: #202e15;
-    color: white;
+    background-color: #255128;
+    color: beige;
     position: relative;
     
     float:left;
@@ -128,7 +131,8 @@ body{
 
     position: relative;
     z-index: 1;
-    background-color: rgba(173, 216, 230, 0.6);
+    /* background-color: #67c8c8; */
+    background-image: linear-gradient(to bottom, rgb(97, 198, 161), rgb(98, 175, 223));
     /* padding: 0 0 0 0; */
     top: -200px;
     padding: 400px 0 0 25%;
@@ -139,7 +143,7 @@ body{
 }
 #aboutMeTitle div{
     
-    color: white;
+    color: beige;
     font-size: 1.4em;
 
     border: #614028 5px solid;
@@ -159,8 +163,8 @@ body{
     position: relative;
     border: solid #614028 5px;
     border-radius: 15px;
-    background-color: #809c52;
-    color: white;
+    background-color: #449342;
+    color: beige;
     
     float:right;
     width: 30%;
@@ -196,7 +200,7 @@ body{
     position: relative;
     box-sizing: border-box;
     margin: 60px 20px 20px 0;
-    color: white;
+    color: beige;
 
     float: right;
     width: 40%;
@@ -232,7 +236,7 @@ body{
     width: 50%;
     padding: 0;
 
-    color: white;
+    color: beige;
     margin: 40px 0 20px 20px;
     box-sizing: border-box;
 
@@ -262,7 +266,7 @@ body{
     
     /* max-height: 100px; */
     background-color: #202e15;
-    color: white;
+    color: beige;
 
 
     border-top: solid #614028 5px;
@@ -300,15 +304,15 @@ body{
 
 
 #projectsS {
-    background-color: #202e15;
-    color: white;
+    background-color: #1e5f28f3;
+    color: beige;
 
     width: 50%;
     max-width: 800px;
     box-sizing: border-box;
 
     margin: 0 0 10px 5%;
-    padding: 15px;
+    padding: 15px 0;
 
     border: #614028 solid 5px;
     border-radius: 15px;
@@ -326,6 +330,7 @@ body{
         float: right;
         width: 25px;
         padding: 2px;
+        margin: 0 5px;
         background-color: rgba(173, 216, 230, 0.6);
         border: #614028 solid 2px;
         border-radius: 15px;
@@ -340,7 +345,7 @@ body{
         font-size: 1em;
         border-collapse: collapse;
     }
-    td { width: 50%; padding: 3px;}
+    td { width: 50%; padding: 5px;}
     tr {border-bottom: 1px solid #614028; }
     th { padding: 10px 0; font-size: 1.2em;}
     tr:hover {background-color: rgba(255, 255, 255, 0.15);}
@@ -353,17 +358,17 @@ body{
 
 
 #projectsA {
-    background-color: #809c52;
+    background-color: #614028;
     float: right;
     width: 30%;
     position: relative;
     margin: 30px 5% 0 0;
     padding: 10px;
-    border: #614028 solid 5px;
+    border: #202e15 solid 5px;
     border-radius: 50px;
     h1 {
-        color: white;
-        font-size: 1.2em;
+        color: beige;
+        font-size: 1.3em;
         text-align: center;
     }
 }
@@ -371,12 +376,11 @@ body{
 #projectsT {
     width: 100%;
     margin: 175px 0 15px 0;
-
     border: 5px solid #614028;
     background-color: gray;
 
     img {
-        width: 20%;
+        height: 200px;
         border: #614028 4px solid;
         border-radius: 15px;
         margin: 5px;
@@ -384,6 +388,7 @@ body{
     #imgX {                                                                            
         position: absolute;
         width: 30px;
+        height: auto;
         top: 15px;
         right: 15px;
         border: #614028 3px solid;
@@ -396,6 +401,28 @@ body{
     #imgX:active {
         background-color: rgba(173, 216, 230, 0.6);
     
+    }
+    h1 {
+        background-color: #202e15;
+        padding: 25px 40px;
+        box-sizing: border-box;
+        color: #809c52;
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+    h2 {
+        padding: 10px;
+        background-color: teal;
+
+        flex: 1;
+        margin: 0px 0 10px 0;
+        border: #614028 2px solid;
+    }
+    h3 {
+        margin: 10px 15px;
+    }
+    .hiddenSub {
+        display: flex;
     }
 }
 
@@ -433,7 +460,7 @@ body{
 .show {
     /* position:relative; */
     /* width: 25%; */
-    color: white;
+    color: beige;
     font-size: 2em;
     margin: 0 10px 0 10px;
 
@@ -446,17 +473,21 @@ body{
 .hidden {
     background-color: #809c52;
     border: #614028 solid 5px;
-    border-radius: 15px;
+    border-radius: 10px;
 
     position: absolute;
     margin: 80px 7.5% auto 7.5%;
-    padding: 10px;
+    padding: 0px 0;
     width: 85%;
     box-sizing: border-box;
     display: none;
     opacity: 0;
     z-index: 10;
 
+    li {
+        text-align: left;
+        margin: 10px;
+    }
     
 }
 
@@ -490,7 +521,7 @@ body{
 }
 #assembly {
     background-position: -80px center;
-    background-image: url(Images/Projects/Assmebly1.jpg);
+    background-image: url(Images/Projects/Assembly1.jpg);
 }
 
 #cover {
@@ -509,10 +540,78 @@ body{
 }
 
 
+
+#generalE {
+    .footer {margin: -10px 0 0 0;    }
+}
+#work, #research{
+    
+    background-color: #40462d;
+    color: beige;
+    padding: 25px 10%;
+    border-top: #614028 5px solid;
+    border-bottom: #614028 solid 5px;
+    margin: 0;
+}
+#research { text-align: left; }
+#work { text-align: right; }
+
+
+.experienceR, .experienceW {
+    color: beige;
+    background-color: green;
+
+    h2 {
+        background-color: #2e3b57;
+
+
+        width: fit-content;
+        padding: 15px;
+        border: #614028 double 5px;
+        border-radius: 30px;
+    }
+    hr {
+        border: #614028 solid 2px;
+        border-radius: 5px;
+        width: 100%;
+    }
+}
+.experienceW {
+    text-align: right;
+    padding: 15px 10px;
+    h3, p{
+        margin: 0;
+        padding: 10px 30px 0 35%;
+    }
+    h2 {
+        margin: 0 0 0 auto;
+    }
+}
+
+.experienceR {
+    text-align: left;
+    padding: 15px 10px 40px 10px;
+
+    h3, p{
+        margin: 0;
+        padding: 10px 35% 0 30px;
+    }
+    h2 { margin: 0 auto 0 0; }
+}
+
+#contact {
+    float: left;
+    margin: 50px 20px 10px;
+}
+
+
 @media(max-width: 875px) {
     #aboutMeTitle {
         padding-top: 500px;
 
+    }
+    #navBar li {
+        margin: 0 8vw;
     }
     .projectsD {
         width: 25%;
@@ -540,8 +639,8 @@ body{
 }
 @media(max-width: 600px) {
     #navBar li{
-        font-size: 0.8em;
-        margin: 0 5vw;
+        font-size: 0.9em;
+        margin: 0 7vw;
     }
 
     #mainHeader {
@@ -646,7 +745,7 @@ body{
         width: 70%;
         margin: 20px 50px;
     }
-    #projectsT {
+    /* #projectsT {
         
-    }
+    } */
 }
