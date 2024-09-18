@@ -8,12 +8,14 @@ body{
     font-size: 1em;
     line-height: 1.6em;
     font-family:'Times New Roman', Times, serif;
-    color: black;
+    /* color: black; */
+    color: beige;
 
     padding: 0;
     margin: 0 0 0px 0;
 
-    background-image: linear-gradient(to right, beige, rgb(217, 244, 193));
+    /* background-image: linear-gradient(to right, beige, rgb(217, 244, 193)); */
+    background-color: rgba(47,46,52,255);
     background-size: cover;
 }
 
@@ -39,9 +41,9 @@ body{
 
 
 .current{
-    background-color: #614028;
+    background-color: #3b200d;
     padding: 15% 10px 0px 10px;
-    border: solid black 3px;
+    border: solid #1f1107 3px;
     border-radius: 20px;
 }
 
@@ -88,7 +90,7 @@ body{
 #MIT{
 
 
-    border: solid #614028 5px;
+    border: solid #183219 5px;
     border-radius: 15px;
     background-color: #255128;
     color: beige;
@@ -132,22 +134,22 @@ body{
     position: relative;
     z-index: 1;
     /* background-color: #67c8c8; */
-    background-image: linear-gradient(to bottom, rgb(97, 198, 161), rgb(98, 175, 223));
+    background-image: linear-gradient(to bottom , rgb(69, 198, 151), rgb(67, 143, 190));
     /* padding: 0 0 0 0; */
     top: -200px;
     padding: 400px 0 0 25%;
 
-    border-bottom: #614028 solid 10px;
+    border-bottom: #3b200d solid 10px;
     border-radius: 20px;
     margin-bottom: -200px;    
 }
 #aboutMeTitle div{
     
     color: beige;
-    font-size: 1.4em;
+    font-size: 1.2em;
 
-    border: #614028 5px solid;
-    background-color: #809c52;
+    border: #3b200d 5px solid;
+    background-color: #357541;
 
     padding: 15px;
     width: fit-content;
@@ -161,9 +163,9 @@ body{
 #VR{
     max-width: 400px;
     position: relative;
-    border: solid #614028 5px;
+    border: solid #3b200d 5px;
     border-radius: 15px;
-    background-color: #449342;
+    background-color: #347743;
     color: beige;
     
     float:right;
@@ -184,7 +186,7 @@ body{
     }
     img{
         width: 60%;
-        border: black solid 5px;
+        border: rgb(3, 21, 5) solid 5px;
         border-radius: 10px;
 
         margin: 15px 18%;
@@ -194,8 +196,8 @@ body{
 /* CSI */
 #CSI {
     display:inline;
-    border: #614028 solid 5px;
-    background-color: #202e15;
+    border: #122412 solid 5px;
+    background-color: #1c3a1d;
     border-radius: 15px;
     position: relative;
     box-sizing: border-box;
@@ -210,7 +212,7 @@ body{
         float: left;
         width: 100px;
         margin: 20px;
-        border: solid #614028 5px;
+        border: solid #122412 5px;
         border-radius: 10px;
     }
     h1{
@@ -225,9 +227,9 @@ body{
 }
 /* APR */
 #APR {
-    border: #614028 solid 5px;
+    border: #3b200d solid 5px;
     border-radius: 20px;
-    background-color: #809c52;
+    background-color: #347743;
 
     display: inline;
     float: left;
@@ -265,11 +267,11 @@ body{
     width: 100%;
     
     /* max-height: 100px; */
-    background-color: #202e15;
+    background-color: #152e17;
     color: beige;
 
 
-    border-top: solid #614028 5px;
+    border-top: solid #082406 5px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 
@@ -304,7 +306,7 @@ body{
 
 
 #projectsS {
-    background-color: #1e5f28f3;
+    background-color: #2a5c34;
     color: beige;
 
     width: 50%;
@@ -314,7 +316,7 @@ body{
     margin: 0 0 10px 5%;
     padding: 15px 0;
 
-    border: #614028 solid 5px;
+    border: #12351a solid 5px;
     border-radius: 15px;
 
     text-align: center;
@@ -331,14 +333,14 @@ body{
         width: 25px;
         padding: 2px;
         margin: 0 5px;
-        background-color: rgba(173, 216, 230, 0.6);
-        border: #614028 solid 2px;
+        background-color: rgba(42, 130, 160, 0.6);
+        border: #0c2d14 solid 2px;
         border-radius: 15px;
     }
-    img:hover { background-color: rgba(181, 209, 218, 0.87) }
+    img:hover { background-color: rgba(57, 166, 202, 0.87) }
     img:active {
         margin-top: 2px;
-        background-color: #614028;
+        background-color: #33dfdd;
     }
     table {
         width: 100%;
@@ -346,25 +348,25 @@ body{
         border-collapse: collapse;
     }
     td { width: 50%; padding: 5px;}
-    tr {border-bottom: 1px solid #614028; }
+    tr {border-bottom: 1.5px solid #13451d; }
     th { padding: 10px 0; font-size: 1.2em;}
     tr:hover {background-color: rgba(255, 255, 255, 0.15);}
 
 
 
-    hr { border: solid #614028 2px; border-radius: 5px; margin-top: 20px;}
+    hr { border: solid #12351a 2px; border-radius: 5px; margin-top: 20px;}
 
 }
 
 
 #projectsA {
-    background-color: #614028;
+    background-color: #422714;
     float: right;
     width: 30%;
     position: relative;
     margin: 30px 5% 0 0;
     padding: 10px;
-    border: #202e15 solid 5px;
+    border: #2c1a0d solid 5px;
     border-radius: 50px;
     h1 {
         color: beige;
@@ -376,47 +378,48 @@ body{
 #projectsT {
     width: 100%;
     margin: 175px 0 15px 0;
-    border: 5px solid #614028;
-    background-color: gray;
+    border: 5px solid #3b200d;
+    background-image: linear-gradient(to right , rgb(21, 82, 60), rgb(13, 55, 83));
 
     img {
         height: 200px;
-        border: #614028 4px solid;
+        border: #1f1107 2px solid;
         border-radius: 15px;
         margin: 5px;
     }
     #imgX {                                                                            
         position: absolute;
         width: 30px;
-        height: auto;
+        height: 30px;
         top: 15px;
         right: 15px;
-        border: #614028 3px solid;
+        border: #092911 3px solid;
         border-radius: 50%;
-        background-color: rgba(181, 209, 218, 1);
+        background-color: rgba(42, 130, 160, 0.6);
     }
     #imgX:hover {
-        background-color: rgba(173, 216, 230, 0.8);
+        background-color: rgba(122, 178, 197, 0.6);
     }
     #imgX:active {
-        background-color: rgba(173, 216, 230, 0.6);
+        background-color: rgba(129, 158, 167, 0.6);
     
     }
     h1 {
-        background-color: #202e15;
+        background-color: #082b0a;
         padding: 25px 40px;
         box-sizing: border-box;
-        color: #809c52;
+        color: #357541;
         width: 100%;
         margin: 0 0 0 0;
     }
     h2 {
         padding: 10px;
-        background-color: teal;
+        /* background-color: rgb(67, 143, 190); */
+        background-image: linear-gradient(to bottom , rgb(77, 127, 158), rgb(67, 143, 190));
 
         flex: 1;
         margin: 0px 0 10px 0;
-        border: #614028 2px solid;
+        border: #301a0a 2px solid;
     }
     h3 {
         margin: 10px 15px;
@@ -431,8 +434,7 @@ body{
 
     float: left;
     box-sizing: border-box;
-    border: 3px solid rgba(173, 216, 230, 0.9);
-
+    border: 3px solid rgba(44, 24, 11, 0.9);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -471,8 +473,8 @@ body{
 
 }
 .hidden {
-    background-color: #809c52;
-    border: #614028 solid 5px;
+    background-color: #357541;
+    border: #301a0a solid 5px;
     border-radius: 10px;
 
     position: absolute;

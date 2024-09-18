@@ -148,7 +148,7 @@ setInterval(() => {
             dropP.style.display = "inherit";
             dropI.style.transform = "scaleY(-1)";
 
-            if(heightD < 37) {
+            if(heightD < 40) {
                 heightD += heightA;
                 if(heightA > 0.3) heightA -= 0.08;
                 document.querySelector("#projectsS").style.maxHeight = `${heightD}em`;
