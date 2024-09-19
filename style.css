@@ -525,7 +525,10 @@ body{
     background-position: -80px center;
     background-image: url(Images/Projects/Assembly1.jpg);
 }
-
+#turbine {
+    background-position: -10px center;
+    background-image: url(Images/Projects/Turbine2.jpg);
+}
 #cover {
     position:fixed;
     top: 0;
@@ -548,12 +551,13 @@ body{
 }
 #work, #research{
     
-    background-color: #05350b;
+    background-color: #432916;
     color: beige;
     padding: 25px 10%;
     border-top: #29190d 5px solid;
     border-bottom: #29190d solid 5px;
     margin: 0;
+    margin-top: 50px;
 }
 #research { text-align: left; }
 #work { text-align: right; }
@@ -562,6 +566,10 @@ body{
 .experienceR, .experienceW {
     color: beige;
     background-color: rgb(50, 97, 50);
+    border-bottom: 5px solid #29190d;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
 
     h2 {
         background-color: #1b2b4f;
@@ -590,10 +598,28 @@ body{
     }
 }
 
+#resume {
+    a:visited {color:beige;}
+
+    float: left;
+    bottom: 100px;
+
+    background-color: #422714;
+    padding: 15px 40px;
+    border: #2c1a0d double 5px;
+    border-radius: 40px;
+    margin: 40px 0px 0px 5%;
+
+
+    a {color: beige; text-decoration: none;}
+    a:hover {color: #092911;}
+    a:active {color: #225830}
+}
+
 .experienceR {
     text-align: left;
     padding: 15px 10px 40px 10px;
-
+    margin-bottom: 50px;
     h3, p{
         margin: 0;
         padding: 10px 35% 0 30px;
