@@ -405,10 +405,10 @@ body{
     
     }
     h1 {
-        background-color: #082b0a;
+        background-color: #042106;
         padding: 25px 40px;
         box-sizing: border-box;
-        color: #357541;
+        color: #2a5c34;
         width: 100%;
         margin: 0 0 0 0;
     }
@@ -473,7 +473,7 @@ body{
 
 }
 .hidden {
-    background-color: #357541;
+    background-color: #2a5c34;
     border: #301a0a solid 5px;
     border-radius: 10px;
 
@@ -548,11 +548,11 @@ body{
 }
 #work, #research{
     
-    background-color: #40462d;
+    background-color: #05350b;
     color: beige;
     padding: 25px 10%;
-    border-top: #614028 5px solid;
-    border-bottom: #614028 solid 5px;
+    border-top: #29190d 5px solid;
+    border-bottom: #29190d solid 5px;
     margin: 0;
 }
 #research { text-align: left; }
@@ -561,19 +561,19 @@ body{
 
 .experienceR, .experienceW {
     color: beige;
-    background-color: green;
+    background-color: rgb(50, 97, 50);
 
     h2 {
-        background-color: #2e3b57;
+        background-color: #1b2b4f;
 
 
         width: fit-content;
         padding: 15px;
-        border: #614028 double 5px;
+        border: #0d092c double 5px;
         border-radius: 30px;
     }
     hr {
-        border: #614028 solid 2px;
+        border: #29190d solid 2px;
         border-radius: 5px;
         width: 100%;
     }
@@ -603,9 +603,17 @@ body{
 
 #contact {
     float: left;
-    margin: 50px 20px 10px;
-}
+    margin: 50px 0px 10px;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    background-color: #422714;
+    width: 100%;
+    border-top: 5px solid #2c1a0d;
+    border-bottom: 5px solid #2c1a0d;
+    border-radius: 10px;
+    text-align: center;
 
+}
 
 @media(max-width: 875px) {
     #aboutMeTitle {
