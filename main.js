@@ -97,10 +97,10 @@ setInterval(()=> {
 
          if(typeof hover[i] != 'undefined') hover[i].style.top = `${hoverP[i]}px`;
         
-        if(hoverP[i] > 40 || hoverV[i] > 3) hoverA[i] = -0.3;
-        if(hoverP[i] < 0 || hoverV[i] < -3) hoverA[i] = 0.3;
+        if(hoverP[i] > 40 || hoverV[i] > 3) hoverA[i] = -0.2;
+        if(hoverP[i] < 0 || hoverV[i] < -3) hoverA[i] = 0.2;
     }
-}, 30);
+}, 40);
 
 if(typeof hover[0] != 'undefined') {
     hover[0].addEventListener('mouseenter', () => {

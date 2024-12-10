@@ -529,6 +529,10 @@ body{
     background-position: -10px center;
     background-image: url(Images/Projects/Turbine2.jpg);
 }
+#domino {
+    background-position: 60% center;
+    background-image: url(Images/Projects/Domino1.jpg);
+}
 #cover {
     position:fixed;
     top: 0;
@@ -638,7 +642,16 @@ body{
     border-bottom: 5px solid #2c1a0d;
     border-radius: 10px;
     text-align: center;
+    h2 {
+        margin: 10px 100px;
+        display: inline-block;
 
+    }
+    h3 {
+        font-size: x-large;
+        display: inline-block;
+        margin: 10px 100px;
+    }
 }
 
 @media(max-width: 875px) {
