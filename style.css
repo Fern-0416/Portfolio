@@ -537,6 +537,16 @@ body{
 #six {
     /* background-position: 60% center; */
     background-image: url(Images/Projects/61911.png);
+}
+#maslab {
+    background-image: url(Images/Projects/Maslab1.jpg);
+}
+#formlabs {
+    background-image: url(Images/Projects/Formlabs1.jpg);
+}
+#rock {
+    background-position: 80% center;
+    background-image: url(Images/Projects/Rock1.jpg);
 
 }
 #cover {
