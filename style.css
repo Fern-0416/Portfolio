@@ -549,6 +549,18 @@ body{
     background-image: url(Images/Projects/Rock1.jpg);
 
 }
+#micro {
+    background-position: 80% center;
+    background-image: url(Images/Projects/6115_1.jpg);
+}
+#glove {
+    background-position: 80% center;
+    background-image: url(Images/Projects/glove1.jpg);
+}
+#game {
+    background-position: 70% center;
+    background-image: url(Images/Projects/game2.jpg); 
+}
 #cover {
     position:fixed;
     top: 0;
@@ -721,11 +733,30 @@ body{
     .inside {
         height: 33.33vw;
     }
+    .footer h1{
+        font-size: 0.9em;
+        padding: 10px 5% 0 0;
+    }
+    .footer h2{
+        font-size: 0.9em;
+        padding: 10px 5% 0 0;
+    }
+    #micro {
+        .show {
+            font-size:1.4em;
+        }
+    }
+    #game {
+        .show {
+            font-size:1.5em;
+        }
+    }
 }
 @media(max-width: 500px) {
     #aboutMeTitle {
         padding-top: 650px;
     }
+    
 
 }
 @media (min-width: 1400px){
