@@ -599,6 +599,7 @@ body{
     color: beige;
     background-color: rgb(50, 97, 50);
     border-bottom: 5px solid #29190d;
+    border-top: 2px solid #29190d;
 
 
 
@@ -625,6 +626,7 @@ body{
 
     margin-left: auto;
     margin-right: 0;
+    margin-bottom: 60px;
     width: 70%;
     border-left: 5px solid #29190d;
 
@@ -636,10 +638,20 @@ body{
         margin: 0 0 0 auto;
     }
 
+
     a:visited {color:beige;text-decoration: none;}
     a {color: beige; text-decoration: none;}
     a:hover {color: #225830;}
     a:active {color: #092911;}
+    p {
+        a:visited {color:beige;}
+        a {color: beige; text-decoration: none;}
+        a:hover {color: #0b0929;}
+        a:active {color: #223258}
+    }
+}
+#dhub {
+    min-height: 300px
 }
 .experienceR {
     margin-left: 0;
@@ -678,16 +690,25 @@ body{
     a:hover {color: #092911;}
     a:active {color: #225830}
 }
-
-#rh {
-    width: 30vw;
-    min-width: 200px;
-    max-width: 450px;
+#htdar {
+    height: 30vh;
+    min-height: 200px;
+    max-height: 400px;
     float: left;
-    margin: 40px 10px 10px 10px;
+    margin: 40px 10px 0px 7%;
     border: 3px black solid;
     border-radius: 10px;
 }
+#rh {
+    height: 30vh;
+    min-height: 100px;
+    max-height: 150px;
+    float: left;
+    margin: 40px 10px 10px 3%;
+    border: 3px black solid;
+    border-radius: 10px;
+}
+
 #cicata {
     width: 30vw;
     min-width: 200px;
@@ -751,6 +772,7 @@ body{
             font-size:1.5em;
         }
     }
+
 }
 @media(max-width: 500px) {
     #aboutMeTitle {
@@ -880,4 +902,7 @@ body{
     /* #projectsT {
         
     } */
+    #resume {
+        margin: -30px 0px 0px 5%;
+    }
 }
