@@ -150,16 +150,16 @@ setInterval(() => {
 
             if(heightD < 40) {
                 heightD += heightA;
-                if(heightA > 0.3) heightA -= 0.08;
+                if(heightA > 0.3) heightA -= 0.06;
                 document.querySelector("#projectsS").style.maxHeight = `${heightD}em`;
             }    
-            else document.querySelector("#projectsS").style.maxHeight = "auto";
+            else document.querySelector("#projectsS").style.maxHeight = "100em";
         }
         else {
             if(heightD <= 5) dropP.style.display = "none";
             else {
                 heightD -= heightA;
-                if(heightA > 0.5) heightA -= 0.085;
+                if(heightA > 0.5) heightA -= 0.06;
                 document.querySelector("#projectsS").style.maxHeight = `${heightD}em`;
             }
             dropI.style.transform = "scaleY(1)";

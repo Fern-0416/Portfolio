@@ -82,6 +82,14 @@
                     <td>Vinyl cutter</td>
                     <td>8</td>
                 </tr>
+                <tr>
+                    <td>CNC Router</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>Table Saw</td>
+                    <td>8</td>
+                </tr>
             </table>
         </div>
     </section>
@@ -100,11 +108,18 @@
                         <img src="Images/x.webp" alt="X" id="imgX">
                         <h1>PSoC Entertainment System</h1>
                         <div class="hiddenSub">
-                            <h2>Purpose: 6.115 Final Project</h2>
-                            <h2>Date: May 2025</h2>
+                            <h2>Microcomputer Project Laboratory - Final Project</h2>
+                            <h2>May 2025</h2>
+                    
                         </div>
+                        <div class="hiddenSub"><h2> Microcontroller, Wireless, VGA, C, Analog, Programmable System-on-Chip</h2></div>
                         <h3>
-                            Applied the labs and lessons from the 6.115 class to create a Video Game Console with one game. <br><br>The console consists of three modules. The first is audio, that consists of an internal DAC converter output to an external high pass filter and low pass filter, which may be then sent to any speaker. The second is video: the Cypress PSoC sends out custom, carefully timed information through a VGA breakout board, such that the console can display to any TV or monitor that supports a VGA connection. The final module is a wireless video game controller, that sends information through an antenna at 2400 baud and is received by a sister antenna on the main board. <br><br> The game itself is programmed internally in C, and is a 2D platformer. I gathered inspiration from games such as "Hollow Knight" to determine game mechanics. I designed all of the sprites and visuals, alongside the background song that plays when the game is active. Received a 10/10 on the project.  
+                            <ul>
+                                <li>Designed and built a fully functional video game console using a Programmable System-on-Chip microcontroller.</li>
+                                <li>Implemented a robust VGA 640×480 video pipeline, a custom fault-tolerant bidirectional 9600-baud wireless protocol, and seamless 44.1 kHz PCM audio output using PWM.</li>
+                                <li>Developed a complete game engine in C featuring frame buffers, object-oriented patterns, register-level control, and manual memory management. Wrote over 1200 lines of code.</li>
+                                <li>Produced comprehensive documentation enabling reproducibility and further development of the system.</li>
+                            </ul>
                         </h3>
                         <img src="Images/Projects/game1.jpg" alt="Rock1" loading="lazy">
                         <img src="Images/Projects/game2.jpg" alt="Rock2" loading="lazy">
@@ -114,6 +129,37 @@
                     </th>
                 </div>
             </td>
+            <td class="projectsD" id="piano">
+                <div class="inside">
+                    <div class="show">
+                        Augmented Reality Piano Player
+                    </div>
+                    <th class="hidden">
+                        <img src="Images/x.webp" alt="X" id="imgX">
+                        <h1>Augmented Reality Piano Player</h1>
+                        <div class="hiddenSub">
+                            <h2>Personal Project</h2>
+                            <h2>January 2025</h2>
+                        </div>
+                        <div class="hiddneSub"><h2>Unity, Augmented Reality, Audiovisual synchronization, Calibration, Snapdragon</h2></div>
+                        <h3>
+                        <ul>
+                            <li>Developed an AR rhythm-game system that plays a song and overlays real-time piano notes using Snapdragon augmented-reality glasses.</li>
+                            <li>Designed a calibration workflow to precisely align virtual piano keys with the physical keyboard for accurate note placement.</li>
+                            <li>Wrote a Python MIDI-processing tool (200+ lines) to convert MIDI tracks into a timing-accurate, game-readable note sequence.</li>
+                            <li>Implemented pipelining and stalling techniques to reduce audiovisual latency, achieving synchronization within 0.1 ms.</li>
+                        </ul>
+                    </h3>
+
+
+                        <img src="Images/Projects/Piano1.png" alt="Piano1" loading="lazy">
+                        <img src="Images/Projects/Piano2.jpg" alt="Piano2" loading="lazy">
+
+                    </th>
+                </div>
+
+            </td>
+
             <td class="projectsD" id="glove">
                 <div class="inside">
                     <div class="show">
@@ -123,11 +169,17 @@
                         <img src="Images/x.webp" alt="X" id="imgX">
                         <h1>LucidVR Haptic Glove</h1>
                         <div class="hiddenSub">
-                            <h2>Purpose: Self-education</h2>
-                            <h2>Date: April 2025</h2>
+                            <h2>Personal Project</h2>
+                            <h2>April 2025</h2>
                         </div>
+                        <div class="hiddneSub"><h2>Mechanical Pulleys, Servo Control, Haptics, Bluetooth, Virtual Reality</h2></div>
                         <h3>
-                            Followed Lucas De Bonet's documentation online on how to create a custom haptic glove for use in Virtual Reality software and games. I gathered all the materials, soddered and assembled the entire glove in the span of two weeks. Made my own modifications to such glove, and it is fully functional. The glove is capable of reading finger positions and constricting finger movement to simulate grabbing an object in virtual reality. 
+                        <ul>
+                            <li>Recreated and expanded upon Lucas De Bonet’s open-source design for a low-cost ($60) VR haptic glove.</li>
+                            <li>Wound a custom torsion-spring pulley system linking individual fingers to low-torque servos for accurate finger-position sensing and force-feedback response.</li>
+                            <li>Integrated an ESP32 with Bluetooth communication to transmit finger-position data to VR applications in real time.</li>
+                            <li>Added ergonomic and mechanical improvements to enhance comfort, durability, and overall usability of the device.</li>
+                        </ul>
                         </h3>
                         <img src="Images/Projects/glove1.jpg" alt="Rock1" loading="lazy">
                         <img src="Images/Projects/glove2.jpg" alt="Rock2" loading="lazy">
@@ -145,11 +197,19 @@
                         <img src="Images/x.webp" alt="X" id="imgX">
                         <h1>6.115: Microcomputer Project Lab</h1>
                         <div class="hiddenSub">
-                            <h2>Purpose: Capstone Course</h2>
-                            <h2>Date: Spring 2025</h2>
+                            <h2>MIT Course</h2>
+                            <h2>Spring 2025</h2>
+                        </div>
+                        <div class="hiddenSub">
+                            <h2>Embedded Systems, Analog & Digital Electronics, Signal Processing, Robotics, Microcontrollers</h2>
                         </div>
                         <h3>
-                            6.115 is a class on designing embedded systems and applying problem solving logic to a wide range of projects. These include lamp ballasts, 5 axis robot arms, 3d scans, and fourier transform visualizations. Learned how to read IC chip datasheets and apply them to solve problems in a safe manner. Filled out thorough weekly reports on the lab content and my progress with such labs.  
+                        <ul>
+                            <li>Completed one of MIT’s most hands-on embedded systems courses, focused on designing elegant, reliable, and efficient hardware–software systems.</li>
+                            <li>Built a range of projects—including fluorescent lamp ballasts, multi-axis robotic arms, 3D scanning systems, and Fourier-transform visualizers—using generalizable embedded design techniques rather than platform-specific shortcuts.</li>
+                            <li>Developed strong proficiency in reading and interpreting IC datasheets, applying device characteristics safely and effectively in custom circuit designs.</li>
+                            <li>Produced detailed weekly engineering reports documenting system behavior, troubleshooting methodology, and experimental results across all lab assignments.</li>
+                        </ul>
                         </h3>
                         <img src="Images/Projects/6115_1.jpg" alt="Rock1" loading="lazy">
                         <img src="Images/Projects/6115_2.jpg" alt="Rock2" loading="lazy">
@@ -163,17 +223,24 @@
             <td class="projectsD" id="rock">
                 <div class="inside">
                     <div class="show">
-                        Advanced Rock Display
+                        Smart Rock Display
                     </div>
                     <th class="hidden" id="">
                         <img src="Images/x.webp" alt="X" id="imgX">
-                        <h1>Advanced Rock Display</h1>
+                        <h1>Smart Rock Display</h1>
                         <div class="hiddenSub">
-                            <h2>Purpose: Gift</h2>
-                            <h2>Date: February 2025</h2>
+                            <h2>Personal Project</h2>
+                            <h2>February 2025</h2>
+                        </div>
+                        <div class="hiddenSub">
+                            <h2>3D Modeling, microcontrollers, 1D graphics, </h2>
                         </div>
                         <h3>
-                            In the span of three days, I modeled and constructed a box to display rocks. Inside, there is a pressure sensor that detects if there is an object inside and sends a message to an Arduino. The Arduino, in turn, tells an LED ring hidden under the bottom platform to turn on with specific color and pattern settings. The Arduino also has a digital display with a set of buttons. These buttons can be used to control the LED's and can bring up a pre-programmed text description of the rock inside.  
+                        <ul>
+                            <li>Designed and 3D-modeled a custom display box for showcasing rocks and other small collectible objects.</li>
+                            <li>Integrated an adjustable-sensitivity pressure plate for reliable object presence detection.</li>
+                            <li>Developed a simple LCD-based interface to configure LED lighting, display object descriptions, and manage stored entries.</li>
+                        </ul>
                         </h3>
                         <img src="Images/Projects/Rock1.jpg" alt="Rock1" loading="lazy">
                         <img src="Images/Projects/Rock2.jpg" alt="Rock2" loading="lazy">
@@ -193,11 +260,19 @@
                         <img src="Images/x.webp" alt="X" id="imgX">
                         <h1>Automatic Drink Mixer</h1>
                         <div class="hiddenSub">
-                            <h2>Purpose: Formlabs hackathon</h2>
-                            <h2>Date: January 2025</h2>
+                            <h2>Formlabs hackathon</h2>
+                            <h2>January 2025</h2>
+                        </div>
+                        <div class="hiddenSub">
+                            <h2>Hydraulics, Servo Valves, Team project, Raspberri Pi</h2>
                         </div>
                         <h3>
-                            I worked in a team of five to build a machine that dispenses liquids from a set of eight containers. It has a digital touchscreen connected to a raspberri pi, which allows you to select a mixed drink. The pi then performs fluid dynamic equations to calculate how long it should turn each valve to obtain precise quantities of each liquid. I worked primarily on the electronics, wiring each valve to a set of transistors to control the 12 volt valves through the pi's gpio pins. I also worked on the programming for the digital display raspberri pi. 
+                        <ul>
+                            <li>Collaborated in a team of five to design and build an automated drink-mixing machine capable of dispensing liquids from eight independent containers.</li>
+                            <li>Implemented a Raspberry Pi control system that operated servo-actuated valves, managing liquid flow through sterilized food-safe tubing.</li>
+                            <li>Applied fluid-dynamics–based timing calculations to achieve accurate, repeatable pour volumes across varying viscosities.</li>
+                            <li>Designed the Raspberry Pi interface and electronics control architecture, integrating hardware, valve actuation, and user interaction.</li>
+                        </ul>
                         </h3>
                         <img src="Images/Projects/Formlabs1.jpg" alt="Formlabs1" loading="lazy">
                         <img src="Images/Projects/Formlabs2.jpg" alt="Formlabs2" loading="lazy">
@@ -217,11 +292,21 @@
                         <img src="Images/x.webp" alt="X" id="imgX">
                         <h1>Mobile Autonomous Systems Laboratory</h1>
                         <div class="hiddenSub">
-                            <h2>Purpose: Project for month long class</h2>
-                            <h2>Date: January 2025</h2>
+                            <h2>MIT Winter Break Class</h2>
+                            <h2>January 2025</h2>
+                        </div>
+                        <div class="hiddenSub">
+                            <h2>Motor control, homography, autonomy, color/edge detection, camera processing, SSH, Finite State Machines</h2>
                         </div>
                         <h3>
-                            I worked in a team of three to build a robot that detects, picks up, and sorts green and red blocks in an autonomous matter. I led the electrical and programming component of the project. I wired up a set of PID motor encoders, time-of-flight sensors, color sensors, and servos to a raspberri Pi, which I controlled through an SSH terminal. As for the programming, I tuned the PID controllers, trained a 1080p camera to detect green and red blocks, and used homography techniques to calculate the distance and position of those blocks. Additionally, I programmed a complex game state to allow the robot continously search and pick up blocks for the duration of the game. 
+                        <ul>
+                            <li>Led a team of three to design and build an autonomous robot capable of detecting, picking up, and sorting red and green blocks.</li>
+                            <li>Designed and wired the full electronics system, integrating five motors and five strategically placed sensors for reliable perception and actuation.</li>
+                            <li>Implemented homography, color filtering, and edge-detection algorithms to extract visual features for high-level decision making.</li>
+                            <li>Developed a Raspberry Pi–based software stack, programmed and tested remotely via SSH, integrating perception, control, and state logic.</li>
+                            <li>Programmed a robust finite state machine (FSM) to manage autonomous behavior and action selection in real time.</li>
+                        </ul>
+
                         </h3>
                         <img src="Images/Projects/Maslab1.jpg" alt="Maslab1" loading="lazy">
                         <img src="Images/Projects/Maslab2.jpg" alt="Maslab12" loading="lazy">
